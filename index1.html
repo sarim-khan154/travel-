@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-container": "#fd6c22", "on-background": "#111c2d", "tertiary-fixed": "#89f3f6", "on-primary-container": "#91d7ee", "on-secondary-fixed-variant": "#7d2d00", "inverse-on-surface": "#ecf1ff", "background": "#f9f9ff", "surface-bright": "#f9f9ff", "tertiary-container": "#006163", "surface-container-highest": "#d8e3fb", "primary": "#004655", "primary-fixed-dim": "#8bd1e8", "surface-tint": "#13677b", "on-error": "#ffffff", "on-secondary-fixed": "#360f00", "surface-variant": "#d8e3fb", "on-primary-fixed-variant": "#004e5f", "inverse-primary": "#8bd1e8", "error-container": "#ffdad6", "surface-container-low": "#f0f3ff", "outline-variant": "#bfc8cc", "on-primary-fixed": "#001f27", "inverse-surface": "#263143", "on-tertiary": "#ffffff", "on-secondary-container": "#591d00", "primary-container": "#005f73", "secondary": "#a43d00", "surface-dim": "#cfdaf2", "tertiary-fixed-dim": "#6bd7da", "on-surface": "#111c2d", "on-primary": "#ffffff", "on-tertiary-fixed-variant": "#004f51", "primary-fixed": "#b2ebff", "tertiary": "#004749", "surface-container-high": "#dee8ff", "on-tertiary-fixed": "#002021", "secondary-fixed": "#ffdbcd", "surface-container": "#e7eeff", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#ffb597", "outline": "#6f797c", "on-error-container": "#93000a", "surface": "#f9f9ff", "error": "#ba1a1a", "on-surface-variant": "#3f484c", "on-secondary": "#ffffff", "on-tertiary-container": "#72dde0" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-md": "1rem", "gutter": "1.5rem", "space-xl": "2.5rem", "gutter-sm": "1rem", "margin-mobile": "1rem", "margin": "2rem" }, fontFamily: { "body-sm": ["Inter"], "display-hero": ["Plus Jakarta Sans"], "label-badge": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "label-md": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-xl": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"] }, fontSize: { "body-sm": ["12px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "400" }], "display-hero": ["56px", { lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "800" }], "label-badge": ["11px", { lineHeight: "14px", letterSpacing: "0.06em", fontWeight: "700" }], "body-lg": ["16px", { lineHeight: "26px", letterSpacing: "0em", fontWeight: "400" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.03em", fontWeight: "600" }], "headline-xl-mobile": ["28px", { lineHeight: "34px", letterSpacing: "-0.015em", fontWeight: "700" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "700" }], "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.025em", fontWeight: "700" }], "body-xl": ["18px", { lineHeight: "28px", letterSpacing: "-0.005em", fontWeight: "400" }], "headline-md": ["22px", { lineHeight: "28px", letterSpacing: "-0.015em", fontWeight: "600" }], "headline-sm": ["18px", { lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "600" }], "display-hero-mobile": ["36px", { lineHeight: "42px", letterSpacing: "-0.02em", fontWeight: "800" }], "body-md": ["14px", { lineHeight: "22px", letterSpacing: "0.005em", fontWeight: "400" }], "headline-lg": ["30px", { lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "700" }] } } } }</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; } body { overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,95,115,0.06)]"><div class="h-16 px-space-md flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><button class="w-11 h-11 flex items-center justify-center text-primary rounded-full hover:bg-surface-container focus:outline-none transition-colors active:scale-95"><span class="material-symbols-outlined text-[24px]">menu</span></button><img alt="Wanderlust Tours Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrCHB6jtcOqjXPSspeqDTNqVNLc5lxFqDXydh0StmqNl2pwsQyGtRB4KQgfmf2VeAW00Kk-4cj0urrowFKHidy3_W3L_burhuCVI3wurLchMQhDI2E8nrUYAZlRvXIu7wH9GJA4KeFQJsXzd6MZUBLudW-Q7bv877OKjo8cDyuOvkck_l-iAdEaQS4VY2rvvXHlJRi7eePQdL6ovB1Pj7EmKMXtFF9QREoScq4IfRDs4"/><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-primary font-bold tracking-tight truncate">Wanderlust Tours</span><span class="font-body-sm text-body-sm text-on-surface-variant truncate">Home</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><a class="h-9 px-space-md rounded-full bg-secondary-container hover:bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center shadow-[0_4px_14px_rgba(242,100,25,0.35)] active:scale-95 transition-all" data-path="booking-flow" href="#">Book Now</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full text-on-surface">
+<!-- 1. INNER HERO SECTION -->
+<section class="relative w-full overflow-hidden">
+<!-- Scenic Karakoram / Himalayan Mountain Backdrop with Scrim -->
+<div class="relative w-full bg-cover bg-center pt-8 pb-12 px-space-md" data-alt="Stunning panoramic view of snow-capped Karakoram mountain peaks under a radiant golden sunset sky with a crystal clear turquoise alpine glacial river in the foreground, illuminated by rich warm ambient sunlight and deep teal alpine shadows." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDL03Wm33zuLAfnpwfbpYtWXHjO1286VI_E5OHYlmRJ5t4Ab0A7BWYjd6euXti37Q95MLp1cq7XFWYHxt5Zi83blBkzLYs0F5p8Kdxk9bVxy0BLxepoITFB4Zzl9rXexYrdNkJNABsYy3C3xzfeiKuWa40RSioJ6FZDYUTr5C6nwc7W3SnrGdi39_LrTIsrNVTgbIjUG3upSnwDgjdKQFUsluhT5pR-yUvcYt82nmg')">
+<!-- Deep Teal Gradient Scrim -->
+<div class="absolute inset-0 bg-gradient-to-b from-primary/85 via-primary/75 to-primary/95 pointer-events-none"></div>
+<div class="relative z-10 max-w-lg mx-auto flex flex-col items-center text-center">
+<!-- Explorer Pill Badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/15 backdrop-blur-md text-tertiary-fixed font-label-badge text-label-badge mb-space-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">explore</span>
+<span>Expeditions &amp; Holidays</span>
+</div>
+<h1 class="font-display-hero-mobile text-display-hero-mobile text-on-primary font-extrabold tracking-tight mb-space-xs drop-shadow-sm">
+          Explore the World With Us
+        </h1>
+<p class="font-body-md text-body-md text-surface-container-high max-w-sm mb-6 font-normal">
+          Unforgettable expeditions across majestic Pakistan and exotic world wonders.
+        </p>
+<!-- Floating Interactive Search Bar Card -->
+<div class="w-full bg-surface-container-lowest rounded-2xl shadow-[0_16px_36px_rgba(0,70,85,0.18)] p-space-md text-left flex flex-col gap-3">
+<!-- Destination Field -->
+<div class="flex flex-col gap-1">
+<label class="font-label-badge text-label-badge text-on-surface-variant uppercase tracking-wider">Destination</label>
+<div class="flex items-center gap-2 px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-primary text-[20px]">location_on</span>
+<input class="w-full bg-transparent text-body-md font-body-md text-on-surface placeholder:text-outline focus:outline-none" placeholder="Where to? e.g. Hunza, Skardu, Dubai" type="text"/>
+</div>
+</div>
+<!-- Date & Travelers Two-Column Field -->
+<div class="grid grid-cols-2 gap-2">
+<div class="flex flex-col gap-1">
+<label class="font-label-badge text-label-badge text-on-surface-variant uppercase tracking-wider">Travel Date</label>
+<div class="flex items-center gap-2 px-2.5 py-2.5 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">calendar_today</span>
+<input class="w-full bg-transparent text-body-sm font-body-sm text-on-surface focus:outline-none" type="text" value="Jul 15, 2025"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-badge text-label-badge text-on-surface-variant uppercase tracking-wider">Travelers</label>
+<div class="flex items-center gap-2 px-2.5 py-2.5 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">group</span>
+<span class="truncate text-body-sm font-body-sm text-on-surface">2 Adults, 1 Rm</span>
+</div>
+</div>
+</div>
+<!-- Search CTA Button -->
+<button class="w-full h-12 mt-1 rounded-full bg-secondary-container hover:bg-secondary text-on-secondary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-[0_8px_20px_rgba(253,108,34,0.35)] active:scale-98 transition-all">
+<span class="material-symbols-outlined text-[20px]">search</span>
+<span>Search Tours</span>
+</button>
+</div>
+<!-- Trust Badges Row -->
+<div class="mt-5 flex items-center justify-center gap-2 text-surface-container-lowest font-label-badge text-label-badge bg-primary-container/40 backdrop-blur-md px-3.5 py-1.5 rounded-full">
+<span class="text-secondary-fixed flex items-center">★ 4.9/5 Rating</span>
+<span class="text-outline-variant">•</span>
+<span>1,200+ Explorers</span>
+<span class="text-outline-variant">•</span>
+<span class="text-tertiary-fixed">Govt Licensed</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. POPULAR DESTINATIONS SECTION -->
+<section class="w-full px-space-md py-8">
+<div class="max-w-lg mx-auto flex flex-col gap-4">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-secondary font-bold">Top Getaways</span>
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface font-bold tracking-tight">Popular Destinations</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Breathtaking northern wilderness and iconic global landmarks.</p>
+</div>
+<!-- 6 Vibrant Destination Cards (2 Columns) -->
+<div class="grid grid-cols-2 gap-3 pt-2">
+<!-- Card 1: Hunza Valley -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_16px_rgba(0,70,85,0.06)] flex flex-col group transition-transform active:scale-98">
+<div class="relative h-28 w-full bg-cover bg-center" data-alt="Majestic Hunza Valley showing Ultar Sar mountain peak towering over ancient Baltit Fort surrounded by lush green apricot orchards and golden sunlight in Gilgit Baltistan Pakistan." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDJLIhe8801vImKeYuNzu0pHsKjwfMkMUIFz-awKnOwhjfuazflJOtK99G7gTJgDhcu-37gBpO_4lo_QvvUXlJIMO9RXNh5txgyrv4DluETRyZW7vsRSXI4svZEZf21UffIaLFG3Kkm0MzScPNEyBzuTgLPLWWcsuE4amd8XFX7ZmAX6mD5xe2YplmwK19kBaEIaA7JiRG5gbxp-1xgwIagAtZYrApQuOpvZcnS6Uk')">
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-badge text-label-badge font-bold">Featured</span>
+</div>
+<div class="p-3 flex flex-col flex-1 justify-between gap-1">
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold leading-tight">Hunza Valley</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Peaks &amp; Baltit Fort</p>
+</div>
+<div class="flex items-center justify-between pt-1 mt-1">
+<div>
+<span class="font-label-badge text-label-badge text-outline uppercase block">From</span>
+<span class="font-label-md text-label-md text-secondary font-extrabold">$350</span>
+</div>
+<span class="text-primary font-label-badge text-label-badge flex items-center group-hover:translate-x-0.5 transition-transform">Explore →</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Skardu -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_16px_rgba(0,70,85,0.06)] flex flex-col group transition-transform active:scale-98">
+<div class="relative h-28 w-full bg-cover bg-center" data-alt="Serene aerial perspective of Upper Kachura Lake and Shangrila Resort in Skardu Baltistan with rustic red chalets reflecting in calm turquoise alpine waters under clear mountain skies." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAH04RiBEZqrM89NOFkIouVuUCWREBnjpekkbRNm0oZUJheg8PKiq7B1gRexxFpuaYHjUA_vufI8kGfXZEbU_DYpf5HRCxxQk4Lz99IsxZ2U16SBP3w7JqWmzkA-csyn8xLa1MWm_0EIA4Va5G5c2UOvkGaim12yBq0nF6POH1NBy34o9ZCg8cXZ7_EL0Kkdpp67Dkvlo-1m0RwsVMjecLf7VBOU6PFjEfk5ItHZrw')">
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary font-label-badge text-label-badge font-bold">Top Pick</span>
+</div>
+<div class="p-3 flex flex-col flex-1 justify-between gap-1">
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold leading-tight">Skardu</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Deosai &amp; Shangrila</p>
+</div>
+<div class="flex items-center justify-between pt-1 mt-1">
+<div>
+<span class="font-label-badge text-label-badge text-outline uppercase block">From</span>
+<span class="font-label-md text-label-md text-secondary font-extrabold">$420</span>
+</div>
+<span class="text-primary font-label-badge text-label-badge flex items-center group-hover:translate-x-0.5 transition-transform">Explore →</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Swat Valley -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_16px_rgba(0,70,85,0.06)] flex flex-col group transition-transform active:scale-98">
+<div class="relative h-28 w-full bg-cover bg-center" data-alt="Lush green pine forest valley of Kalam Swat Valley Pakistan featuring meandering glacial stream, wooden footbridges, and wildflower meadows with snow tipped mountains in the background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAD-sGQrCpRlATzI2SfxR57uSm3vSAl-gEIUhXQPL-X87vxu2GIARlAtPbrr76hQvgV2vsBxiCBa2OG98m2sQJoJpJnakfomnYohonshHyHNnPTtisNVEX5uoQKeFReie-Pon0qEWcRxnxQYHag-7eCQKuebR6mcKUNbzyByIW3suviSlOwWzOI-q8FF7McpVf4YcBQ8pySLWKLGQydHxAkNwArBHHPMkjp9C0HZes')">
+</div>
+<div class="p-3 flex flex-col flex-1 justify-between gap-1">
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold leading-tight">Swat Valley</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Switzerland of East</p>
+</div>
+<div class="flex items-center justify-between pt-1 mt-1">
+<div>
+<span class="font-label-badge text-label-badge text-outline uppercase block">From</span>
+<span class="font-label-md text-label-md text-secondary font-extrabold">$280</span>
+</div>
+<span class="text-primary font-label-badge text-label-badge flex items-center">Explore →</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Naran Kaghan -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_16px_rgba(0,70,85,0.06)] flex flex-col group transition-transform active:scale-98">
+<div class="relative h-28 w-full bg-cover bg-center" data-alt="Iconic Lake Saif-ul-Malook near Naran Kaghan Pakistan reflecting towering Malika Parbat peak with traditional painted wooden boats floating on pristine emerald waters." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-Wwetkb2qkcObq9O5ATUlXVXQrrlNU1eSwCcsFv-Ak4YTibucOZBdS8wL2rRKIKwTjKsWzviAz9vGIUCfCE0A_Lcz5ib5a_taZuy5pK3ySCFgU96vAZU2GA6WZd42Sqo028RBXyJ_mJpbJDCj3LafNKqTxW-i9jtzlGi_FQyhsF-oXOe_GhExa4WCzS_cuNUTPfwBmPskLk2V9XSGXiagNXLVTTBs063FRj-VvH0')">
+</div>
+<div class="p-3 flex flex-col flex-1 justify-between gap-1">
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold leading-tight">Naran Kaghan</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Saif-ul-Malook Lake</p>
+</div>
+<div class="flex items-center justify-between pt-1 mt-1">
+<div>
+<span class="font-label-badge text-label-badge text-outline uppercase block">From</span>
+<span class="font-label-md text-label-md text-secondary font-extrabold">$240</span>
+</div>
+<span class="text-primary font-label-badge text-label-badge flex items-center">Explore →</span>
+</div>
+</div>
+</div>
+<!-- Card 5: Murree & Galyat -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_16px_rgba(0,70,85,0.06)] flex flex-col group transition-transform active:scale-98">
+<div class="relative h-28 w-full bg-cover bg-center" data-alt="Dense cedar and pine hills of Dunga Gali and Nathia Gali with winding mountain hiking pipeline trails shrouded in mystical romantic morning fog and gentle sunlight." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAQ14CB4q0EoHLMglK9pKPLZmEMJV72BESY1osff7ohNevyHma2PCU6e3XiblcQZUgC1FnFEcvLrkGeUjTZNjvFii87Neozz-Iw7xr4uC4ZBZT67TQpp-O69a_ITTbpTZvOWMdU8kLKWNWDlcrsPqU5Bob_dL-BXF7rsi4bP4Nqmc3FRXXHqurDNeWGeMIf6gZrLcnk5j87CC5oA0zVgqjlPfJrR51qfkwlT7cw0Xg')">
+</div>
+<div class="p-3 flex flex-col flex-1 justify-between gap-1">
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold leading-tight">Murree &amp; Galyat</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Pine Hills &amp; Charm</p>
+</div>
+<div class="flex items-center justify-between pt-1 mt-1">
+<div>
+<span class="font-label-badge text-label-badge text-outline uppercase block">From</span>
+<span class="font-label-md text-label-md text-secondary font-extrabold">$180</span>
+</div>
+<span class="text-primary font-label-badge text-label-badge flex items-center">Explore →</span>
+</div>
+</div>
+</div>
+<!-- Card 6: Dubai, UAE -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_16px_rgba(0,70,85,0.06)] flex flex-col group transition-transform active:scale-98">
+<div class="relative h-28 w-full bg-cover bg-center" data-alt="Futuristic skyline of Dubai Marina at twilight with glowing skyscraper lights, luxury cruising yachts on deep blue water, and an ambient warm desert evening glow." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDKGsBZHBhjOz6kPZUFEURfWIMCJBr0zLdhj_wyBiEMSLS_j0BLZbwGsM-5BcoE3dLFd-cL5uGpKQBLNcV7uyPfZUPIv_e6cv6aBOZ6SQxhPfDzCcw9OWG5h9tz6RJ9lvselvXLuV45zfTAJO8uXMyMgXZ03jnA_22gInMwWfc7zbgk3PqTr41dbzp-c1qBVp40i2omeG6U_sHuZIwzLApuHq_tr_ilwyaP5ofJBOE')">
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary font-label-badge text-label-badge font-bold">Global</span>
+</div>
+<div class="p-3 flex flex-col flex-1 justify-between gap-1">
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold leading-tight">Dubai, UAE</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Desert &amp; Luxury</p>
+</div>
+<div class="flex items-center justify-between pt-1 mt-1">
+<div>
+<span class="font-label-badge text-label-badge text-outline uppercase block">From</span>
+<span class="font-label-md text-label-md text-secondary font-extrabold">$650</span>
+</div>
+<span class="text-primary font-label-badge text-label-badge flex items-center">Explore →</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. TOUR PACKAGES SECTION -->
+<section class="w-full px-space-md py-8 bg-surface-container-low">
+<div class="max-w-lg mx-auto flex flex-col gap-5">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-primary font-bold">Curated Expeditions</span>
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface font-bold tracking-tight">Featured Tour Packages</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">All-inclusive VIP guided itineraries with handpicked stays.</p>
+</div>
+<!-- Package Cards Stack -->
+<div class="flex flex-col gap-4">
+<!-- Package Card 1 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_6px_24px_rgba(0,70,85,0.08)] flex flex-col">
+<div class="relative h-44 w-full bg-cover bg-center" data-alt="Nanga Parbat mountain reflection in Fairy Meadows pond with traditional wooden alpine cabins surrounded by wild pine trees during golden hour sunset in Northern Pakistan." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBu350soIypjqq6wm9EgT5Ab5A9-SBaPPxVNrM4Cdzr6nbN2IlkX4t0FGfir3QO9JkmSeYIpdtG3JWNgL4doqzd8A3s6ZjNrmfSo-jCieJkINKHTB8vmsNl1FkDm3NgB6aA8_Ah1vJDkZqj91WNkzUr5NCwWVU9d1Q2RypyvLkAygPPft6aq2Ct-Kvs-OuaDBzCNNHPd7MMVJ4Ves-lfJAEenipft5h6Vc59KSUsrI')">
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary font-label-badge text-label-badge font-bold">Best Seller</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-badge text-label-badge">7 Days / 6 Nights</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-3">
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Hunza &amp; Fairy Meadows Dream Expedition</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Luxury 4x4 Jeep Safari, 4-Star Hotel Stay, Guided Trekking &amp; All Meals Included.</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-outline line-through">$699</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-primary font-extrabold">$599</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ person</span>
+</div>
+</div>
+<button class="h-10 px-5 rounded-full bg-secondary-container hover:bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center shadow-[0_4px_14px_rgba(253,108,34,0.3)] active:scale-95 transition-all">
+                Book Now
+              </button>
+</div>
+</div>
+</div>
+<!-- Package Card 2 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_6px_24px_rgba(0,70,85,0.08)] flex flex-col">
+<div class="relative h-44 w-full bg-cover bg-center" data-alt="Wild expanse of Deosai National Park with vibrant blooming purple wildflowers, Sheosar Lake, and winding jeep trails under immense blue skies in Skardu Pakistan." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAN61r0ydHsfby-FTZ9aNZqFCS8KDy9ul-PuoKbJFk6llqJNmcn9pKP1wRohQdhoAx0A_oRbIwHDQ3MT_HY6rZt7TLgmD9ArBUudK5bloOhhQ_tCGJ4Ev7PLoXcaiIg1QmFOpzz1kbosqNzbP_M7PIwNMWDQ6vuHHtVRDx9-eMwvi87PgRszaBweHNF9sExGGaVbCJ0wDlhPrFnbJxThjdSUuNbVFsjID-WAaY4-9A')">
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-badge text-label-badge font-bold">Wilderness</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-badge text-label-badge">6 Days / 5 Nights</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-3">
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Skardu &amp; Deosai Wilderness Adventure</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Shangrila Resort, Katpana Cold Desert, Bonfire Nights &amp; Flight Transfers.</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex flex-col">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-primary font-extrabold">$520</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ person</span>
+</div>
+</div>
+<button class="h-10 px-5 rounded-full bg-secondary-container hover:bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center shadow-[0_4px_14px_rgba(253,108,34,0.3)] active:scale-95 transition-all">
+                Book Now
+              </button>
+</div>
+</div>
+</div>
+<!-- Package Card 3 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_6px_24px_rgba(0,70,85,0.08)] flex flex-col">
+<div class="relative h-44 w-full bg-cover bg-center" data-alt="Red sand dunes of Dubai desert with modern 4x4 dune bashing safari vehicles kicking up golden sands in front of a warm crimson sunset horizon." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCoiFLnL2GlXCfKr4NivX2bsK6cFlPS_0hfUDz8-TqcsImbq3hUA1xoaNyCwtapT96lNyK-3qFaZG0EgybTfcIEimSqPKqFDXlQd3ZZKccwoF8Ch33eFCY55oFnGknrs6ZWztdQsuTJMu5ce8fWZqHnQpHH8rvcPayBYejkYpcrzPo1mZrQu-bNNrjvnH1gVKBZbzQnVmCRWgnTRjhevdDx9wa58kyIS5tX4ye-iJI')">
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-tertiary-container text-on-tertiary font-label-badge text-label-badge font-bold">Luxury</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-badge text-label-badge">5 Days / 4 Nights</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-3">
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Dubai Luxury &amp; Desert Safari Escape</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Burj Khalifa VIP Access, 5-Star Marina Hotel, Dunes Bashing &amp; Dhow Cruise.</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex flex-col">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-primary font-extrabold">$780</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ person</span>
+</div>
+</div>
+<button class="h-10 px-5 rounded-full bg-secondary-container hover:bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center shadow-[0_4px_14px_rgba(253,108,34,0.3)] active:scale-95 transition-all">
+                Book Now
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. WHY CHOOSE US SECTION -->
+<section class="w-full px-space-md py-8">
+<div class="max-w-lg mx-auto flex flex-col gap-5">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-secondary font-bold">The Wanderlust Standard</span>
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface font-bold tracking-tight">Why Travel With Us</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Engineered for comfort, high safety, and memorable local stories.</p>
+</div>
+<div class="grid grid-cols-1 gap-3">
+<!-- Feature 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-[0_2px_12px_rgba(0,70,85,0.05)] flex items-start gap-3.5">
+<div class="w-11 h-11 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">payments</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold">Best Price Guarantee</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Transparent pricing with zero hidden surcharges or surprise expedition fees.</p>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-[0_2px_12px_rgba(0,70,85,0.05)] flex items-start gap-3.5">
+<div class="w-11 h-11 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">hiking</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold">Experienced Guides</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Certified local mountaineers and multilingual tour leads rooted in local culture.</p>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-[0_2px_12px_rgba(0,70,85,0.05)] flex items-start gap-3.5">
+<div class="w-11 h-11 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">support_agent</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold">24/7 Dedicated Support</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Real-time assistance on WhatsApp and hotline from arrival to safe departure.</p>
+</div>
+</div>
+<!-- Feature 4 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-[0_2px_12px_rgba(0,70,85,0.05)] flex items-start gap-3.5">
+<div class="w-11 h-11 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold">Safe &amp; Comfortable Travel</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Insured premium 4x4 vehicles, vetted luxury stays, and wilderness medical kits.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. HOW IT WORKS SECTION -->
+<section class="w-full px-space-md py-8 bg-surface-container">
+<div class="max-w-lg mx-auto flex flex-col gap-5">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-primary font-bold">Effortless Planning</span>
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface font-bold tracking-tight">How It Works</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Three simple steps from dream to alpine departure.</p>
+</div>
+<div class="flex flex-col gap-3 relative">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm flex items-start gap-3.5">
+<div class="w-9 h-9 rounded-full bg-primary text-on-primary font-headline-sm text-headline-sm font-bold flex items-center justify-center flex-shrink-0 shadow-sm">
+            01
+          </div>
+<div class="flex flex-col">
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold">Choose Destination</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Browse our northern Pakistani mountain routes or international holidays catalog.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm flex items-start gap-3.5">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary font-headline-sm text-headline-sm font-bold flex items-center justify-center flex-shrink-0 shadow-sm">
+            02
+          </div>
+<div class="flex flex-col">
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold">Book Your Package</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Pick customized travel dates, vehicle tiers, and get instant verified booking confirmation.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm flex items-start gap-3.5">
+<div class="w-9 h-9 rounded-full bg-tertiary-container text-on-tertiary font-headline-sm text-headline-sm font-bold flex items-center justify-center flex-shrink-0 shadow-sm">
+            03
+          </div>
+<div class="flex flex-col">
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold">Enjoy Your Trip</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Pack your bags and experience seamless guided hospitality from airport pickup onward.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. CUSTOMER REVIEWS SECTION -->
+<section class="w-full px-space-md py-8">
+<div class="max-w-lg mx-auto flex flex-col gap-5">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-secondary font-bold">Traveler Stories</span>
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface font-bold tracking-tight">What Our Explorers Say</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Genuine feedback from explorers who roamed with us.</p>
+</div>
+<div class="flex flex-col gap-3.5">
+<!-- Review 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-[0_4px_16px_rgba(0,70,85,0.06)] flex flex-col gap-2.5">
+<div class="flex items-center gap-1 text-secondary-container">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+            “The Hunza trip was an absolute dream! The guides were so warm and knowledgeable, and every hotel had breathtaking views.”
+          </p>
+<div class="flex items-center gap-2.5 pt-1">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-bold text-label-md">
+              SJ
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Sarah Jenkins</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">London, UK</span>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-[0_4px_16px_rgba(0,70,85,0.06)] flex flex-col gap-2.5">
+<div class="flex items-center gap-1 text-secondary-container">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+            “Skardu and Deosai were out of this world. Wanderlust Tours handled all permits, 4x4 logistics, and luxury glamping flawlessly.”
+          </p>
+<div class="flex items-center gap-2.5 pt-1">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-bold text-label-md">
+              AM
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Ahmed Malik</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Lahore, Pakistan</span>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-[0_4px_16px_rgba(0,70,85,0.06)] flex flex-col gap-2.5">
+<div class="flex items-center gap-1 text-secondary-container">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+            “Booked our family Dubai tour with Wanderlust. Stress-free transfers, private desert camp, and five-star hospitality throughout.”
+          </p>
+<div class="flex items-center gap-2.5 pt-1">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed font-bold text-label-md">
+              ER
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Elena Rostova</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dubai / Expat</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. SPECIAL OFFER BANNER -->
+<section class="w-full px-space-md py-4">
+<div class="max-w-lg mx-auto bg-gradient-to-br from-secondary-container via-secondary to-primary p-6 rounded-2xl text-on-secondary shadow-[0_12px_32px_rgba(253,108,34,0.3)] relative overflow-hidden flex flex-col gap-4">
+<!-- Ambient overlay circles -->
+<div class="absolute -right-8 -bottom-8 w-36 h-36 rounded-full bg-surface-container-lowest/10 blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/20 backdrop-blur-md font-label-badge text-label-badge font-bold uppercase tracking-wider">
+          Limited Season Deal
+        </span>
+<div class="flex items-center gap-1 bg-surface-container-lowest/20 backdrop-blur-md px-2.5 py-1 rounded-full text-label-badge font-label-badge">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+<span>Ends in 04d : 12h : 30m</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile font-extrabold tracking-tight leading-tight">
+          Summer Special: Get 15% Off on Northern Pakistan Tours
+        </h3>
+<p class="font-body-sm text-body-sm text-surface-container-high">
+          Book before June 30 with code <span class="font-bold underline tracking-wider">WANDER15</span> and unlock free drone footage of your expedition!
+        </p>
+</div>
+<button class="w-full h-11 rounded-full bg-surface-container-lowest hover:bg-surface text-secondary-container font-label-lg text-label-lg font-bold flex items-center justify-center gap-1.5 shadow-md active:scale-95 transition-all">
+<span>Claim 15% Discount</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- 8. CONTACT & BOOKING SECTION -->
+<section class="w-full px-space-md py-8">
+<div class="max-w-lg mx-auto bg-surface-container-lowest p-space-md rounded-2xl shadow-[0_8px_24px_rgba(0,70,85,0.06)] flex flex-col gap-4">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-secondary font-bold">Get in Touch</span>
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface font-bold tracking-tight">Custom Itinerary &amp; Booking</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Have questions or need a tailored group expedition? Send us a quick note.</p>
+</div>
+<form class="flex flex-col gap-3" onsubmit="event.preventDefault();">
+<!-- Full Name -->
+<div class="flex flex-col gap-1">
+<label class="font-label-badge text-label-badge text-on-surface-variant uppercase">Full Name</label>
+<div class="flex items-center gap-2 px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-primary text-[20px]">person</span>
+<input class="w-full bg-transparent text-body-md font-body-md text-on-surface placeholder:text-outline focus:outline-none" placeholder="Ali Khan" type="text"/>
+</div>
+</div>
+<!-- Phone / WhatsApp -->
+<div class="flex flex-col gap-1">
+<label class="font-label-badge text-label-badge text-on-surface-variant uppercase">Phone / WhatsApp</label>
+<div class="flex items-center gap-2 px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-primary text-[20px]">call</span>
+<input class="w-full bg-transparent text-body-md font-body-md text-on-surface placeholder:text-outline focus:outline-none" placeholder="+92 300 1234567" type="tel"/>
+</div>
+</div>
+<!-- Destination Selection -->
+<div class="flex flex-col gap-1">
+<label class="font-label-badge text-label-badge text-on-surface-variant uppercase">Preferred Destination</label>
+<div class="flex items-center gap-2 px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-primary text-[20px]">map</span>
+<select class="w-full bg-transparent text-body-md font-body-md text-on-surface focus:outline-none">
+<option value="hunza">Hunza Valley</option>
+<option value="skardu">Skardu &amp; Deosai</option>
+<option value="swat">Swat Valley</option>
+<option value="dubai">Dubai, UAE</option>
+<option value="custom">Custom Tailored Tour</option>
+</select>
+</div>
+</div>
+<!-- Message -->
+<div class="flex flex-col gap-1">
+<label class="font-label-badge text-label-badge text-on-surface-variant uppercase">Your Travel Notes</label>
+<div class="px-3 py-2 rounded-lg bg-surface-container-low text-on-surface">
+<textarea class="w-full bg-transparent text-body-md font-body-md text-on-surface placeholder:text-outline focus:outline-none resize-none" placeholder="Tell us your dates, group size, and preferences..." rows="3"></textarea>
+</div>
+</div>
+<!-- Submit Button -->
+<button class="w-full h-12 rounded-full bg-secondary-container hover:bg-secondary text-on-secondary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-[0_6px_20px_rgba(253,108,34,0.35)] active:scale-95 transition-all" type="submit">
+<span>Send Message &amp; Inquire</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</form>
+<!-- Quick Contact Channels -->
+<div class="pt-2 flex flex-col gap-2">
+<span class="font-label-badge text-label-badge text-outline uppercase tracking-wider text-center">Instant Live Channels</span>
+<div class="grid grid-cols-2 gap-2">
+<a class="h-10 px-3 rounded-full bg-surface-container flex items-center justify-center gap-1.5 text-on-surface font-label-badge text-label-badge hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined text-primary text-[18px]">chat</span>
+<span>WhatsApp Chat</span>
+</a>
+<a class="h-10 px-3 rounded-full bg-surface-container flex items-center justify-center gap-1.5 text-on-surface font-label-badge text-label-badge hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined text-primary text-[18px]">phone_in_talk</span>
+<span>+92 51 8892300</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. FOOTER SECTION -->
+<footer class="w-full bg-primary text-on-primary px-space-md pt-10 pb-8 mt-4">
+<div class="max-w-lg mx-auto flex flex-col gap-6">
+<!-- Brand & Bio -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<img alt="Wanderlust Tours Logo" class="h-7 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/ALJJyrCHB6jtcOqjXPSspeqDTNqVNLc5lxFqDXydh0StmqNl2pwsQyGtRB4KQgfmf2VeAW00Kk-4cj0urrowFKHidy3_W3L_burhuCVI3wurLchMQhDI2E8nrUYAZlRvXIu7wH9GJA4KeFQJsXzd6MZUBLudW-Q7bv877OKjo8cDyuOvkck_l-iAdEaQS4VY2rvvXHlJRi7eePQdL6ovB1Pj7EmKMXtFF9QREoScq4IfRDs4"/>
+</div>
+<p class="font-body-sm text-body-sm text-surface-container-high">
+          Leading bespoke tour operator curating high-altitude expeditions in Northern Pakistan and opulent luxury escapes across global capitals.
+        </p>
+</div>
+<!-- Quick Links Grid -->
+<div class="grid grid-cols-2 gap-4 text-surface-container-lowest">
+<div class="flex flex-col gap-2">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-secondary-fixed">Destinations</span>
+<a class="font-body-sm text-body-sm hover:underline" href="#">Hunza Valley</a>
+<a class="font-body-sm text-body-sm hover:underline" href="#">Skardu &amp; Deosai</a>
+<a class="font-body-sm text-body-sm hover:underline" href="#">Fairy Meadows</a>
+<a class="font-body-sm text-body-sm hover:underline" href="#">Dubai, UAE</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-secondary-fixed">Company &amp; Legal</span>
+<a class="font-body-sm text-body-sm hover:underline" href="#">About Our Leads</a>
+<a class="font-body-sm text-body-sm hover:underline" href="#">Safety Protocols</a>
+<a class="font-body-sm text-body-sm hover:underline" href="#">Refund Policy</a>
+<a class="font-body-sm text-body-sm hover:underline" href="#">Terms &amp; Permits</a>
+</div>
+</div>
+<!-- Contact Info -->
+<div class="flex flex-col gap-1.5 text-body-sm font-body-sm text-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">location_city</span>
+<span>Islamabad: Blue Area, F-6 • Dubai: Business Bay</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">mail</span>
+<span>hello@wanderlusttours.com</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">call</span>
+<span>+92 51 8892300 / +971 4 238 9012</span>
+</div>
+</div>
+<!-- Social Icons -->
+<div class="flex items-center gap-3 pt-2">
+<a class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center hover:bg-secondary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</a>
+<a class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center hover:bg-secondary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">smart_display</span>
+</a>
+<a class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center hover:bg-secondary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</a>
+<a class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center hover:bg-secondary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</a>
+</div>
+<!-- Copyright Notice -->
+<div class="pt-4 text-center font-body-sm text-body-sm text-surface-container-highest/60">
+        © 2025 Wanderlust Tours &amp; Travel Pvt Ltd. All rights reserved.<br/>
+        Registered with Department of Tourist Services (DTS #4092).
+      </div>
+</div>
+</footer>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,95,115,0.06)]" data-active-classes="text-primary-container font-semibold"><div class="h-16 px-space-xs flex items-center justify-around"><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 transition-colors text-primary-container font-semibold" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-badge text-label-badge">Home</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="destinations" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-badge text-label-badge">Destinations</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="packages" href="#"><span class="material-symbols-outlined text-[22px]">backpack</span><span class="font-label-badge text-label-badge">Packages</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="reviews" href="#"><span class="material-symbols-outlined text-[22px]">hotel_class</span><span class="font-label-badge text-label-badge">Reviews</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#"><span class="material-symbols-outlined text-[22px]">support_agent</span><span class="font-label-badge text-label-badge">Contact</span></a></div></nav></body></html>
